@@ -1,0 +1,24 @@
+<xml>
+	<pragma once="true" />
+	<set name="PROJECT_DIR" value="${haxelib:accentcolor}/src/accent/native" />
+
+	<files id="__main__">
+		<compilerflag value="-I${PROJECT_DIR}" />
+	</files>
+
+	<files id="haxe">
+		<compilerflag value="-I${PROJECT_DIR}" />
+	</files>
+
+	<files id="accentcolor">
+		<compilerflag value="-I${PROJECT_DIR}" />
+		<file name="${PROJECT_DIR}/accentcolor.cpp" />
+	</files>
+
+	<target id="haxe">
+		<files id="accentcolor" />
+		<section if="windows">
+            <lib name="windowsapp.lib" />
+        </section>
+	</target>
+</xml>
