@@ -4,15 +4,21 @@
 
 	<files id="__main__">
 		<compilerflag value="-I${PROJECT_DIR}" />
+		<flag value="/std:c++17"/>
+		<compilerflag value="/std:c++17"/>
 	</files>
 
 	<files id="haxe">
 		<compilerflag value="-I${PROJECT_DIR}" />
+		<flag value="/std:c++17"/>
+		<compilerflag value="/std:c++17"/>
 	</files>
 
 	<files id="accentcolor">
 		<compilerflag value="-I${PROJECT_DIR}" />
 		<file name="${PROJECT_DIR}/accentcolor.cpp" />
+		<flag value="/std:c++17"/>
+		<compilerflag value="/std:c++17"/>
 	</files>
 
 	<target id="haxe">
